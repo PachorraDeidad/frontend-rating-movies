@@ -9,6 +9,7 @@ const fetchUser = async ({ otpCode, name, password, username, email }: ConfirmCo
   try {
     await api.post('/signup/verifyCodeAndSignUp', { otpCode, password, username, name, email });
     return
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     return error.response ? error.response.data : { general: 'Error inesperado. Intenta de nuevo.' };
   }

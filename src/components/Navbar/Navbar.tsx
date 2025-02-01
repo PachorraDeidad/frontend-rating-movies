@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import AuthTab from '../auth/AuthTab'
 function Navbar() {
   const [visibility, setVisibilitySidebar] = useState("close")
