@@ -1,6 +1,5 @@
 import  { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import ListMovies from "../../components/movies/ListMovies";
+import SlideShow from "../../components/movies/ListMovies";
 import { getMovies } from "../../services/getAllMovies";
 import { Movie } from "../../types/movie";
 function Home(){
@@ -12,11 +11,10 @@ function Home(){
   },[])
 
   return (
-    <div className=" w-screen h-screen bg-[#141517] relative">
-        
-      <Navbar/>
-      <ListMovies Movies = {movies}/>
+    <div className="mt-8 ">
 
+      <SlideShow listMovies = {movies}/>
+w
     </div>
   );
 }
