@@ -97,9 +97,9 @@ function AuthTab({ closeAuthTab, tab }: FormProps) {
   const indicatorPosition = form === 'login' ? 'left-[13%]' : 'left-[calc(86%-110px)]';
 
   const authContent = (
-    <div className="w-[440px] max-w-[32rem] p-6 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#171C1E] rounded-s flex flex-col gap-7">
+    <div className="z-50 w-[440px] max-w-[32rem] p-6 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#171C1E] rounded-md flex flex-col gap-7 ">
       <div className="flex items-center justify-between text-center">
-        <img src="/img/pngwing.com.png" alt="Logo" width={100} height={30} />
+        <img src="/img/pngwing.com.png" alt="Logo" width={100} height={30} style={{ backgroundColor: "#171C1E" }} />
         <button
           className="w-10 h-10 flex items-center justify-center hover:bg-zinc-700 duration-300 rounded-md"
           onClick={() => closeAuthTab('close')}

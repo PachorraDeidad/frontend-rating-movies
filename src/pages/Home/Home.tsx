@@ -11,10 +11,11 @@ function Home(){
   },[])
 
   return (
-    <div className="mt-8 ">
-
+    <div>
+      <div>
+        <h1 className="text-white text-4xl m-5">Our recommendations</h1>
       <SlideShow listMovies = {movies}/>
-w
+      </div>
     </div>
   );
 }

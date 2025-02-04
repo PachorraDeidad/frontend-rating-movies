@@ -7,7 +7,7 @@ function Navbar() {
   const [authTab, setAuthTab] = useState('login');
 
   return (
-    <nav className="h-20 bg-[#141519] drop-shadow-[0_2px_5px_#000000] relative top-0 z-50 flex items-center justify-between pl-6 pr-20">
+    <nav className="fixed top-0 left-0 w-full h-20 bg-[#141519] drop-shadow-[0_2px_5px_#000000] z-50 flex items-center justify-between px-6">
       
       <div className="flex items-center gap-4">
         <div className="cursor-pointer text-white">
@@ -53,7 +53,7 @@ function Navbar() {
             </svg>
           )}
         </div>
-        <img src="/img/pngwing.com.png" width={100} height={50} alt="Logo" />
+        <img src="/img/pngwing.com.png" width={100} height={50} alt="Logo" style={{ backgroundColor: "#141519" }} />
       </div>
 
       <div className="flex-1 flex justify-center">
